@@ -1,0 +1,29 @@
+@layer base {
+  * {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-gray-dark;
+  }
+
+  h1 {
+    @apply text-lg lg:text-2xl font-bold text-stone uppercase text-center;
+  }
+
+  h2 {
+    @apply text-stone uppercase text-center;
+  }
+
+  form {
+    @apply flex flex-col gap-2 p-2 [&>div>label]:text-stone [&>div>span]:text-gold [&>div>input]:p-2;
+  }
+
+  #root {
+    @apply max-w-screen-2xl mx-auto p-4;
+  }
+}
